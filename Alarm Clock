@@ -1,0 +1,15 @@
+import datetime
+import time
+
+alarm_time= input('Set The Alarm: ')
+print(f'{alarm_time} Alarm is set! ')
+
+while True:
+    now=datetime.datetime.now().strftime('%H:%M')
+
+    if now == alarm_time:
+        print('⏰ Wake Up , alarm is ringing')
+        break
+
+    print(f'Checking ...')
+    time.sleep(5)
